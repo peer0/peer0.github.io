@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Publications</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <style>
+    .filter-btns button {
+      margin: 5px;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+    .paper {
+      margin: 10px 0;
+      display: none;
+    }
+    .visible { display: block; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Publications</h1>
+  </header>
+
+  <div class="filter-btns">
+    <button onclick="filterPubs('all')">All</button>
+    <button onclick="filterPubs('journal')">Journal</button>
+    <button onclick="filterPubs('conference')">Conference</button>
+    <button onclick="filterPubs('arxiv')">To Appear / Preprints</button>
+  </div>
+
+  <div id="pub-list">
+
+    <!-- Journal Papers -->
+    <div class="paper journal visible">
+      <strong>Advanced Code Time Complexity Prediction Approach Using Contrastive Learning</strong><br/>
+      Shinwoo Park, Joonghyuk Hahn, Elizabeth Orwig, Sang-Ki Ko, Yo-Sub Han<br/>
+      <em>Engineering Applications of Artificial Intelligence</em><br/>
+      <a href="https://doi.org/10.1016/j.engappai.2025.110631">DOI</a>
+    </div>
+
+    <div class="paper journal visible">
+      <strong>Characterizations of M-equivalence and Weak M-relation</strong><br/>
+      Joonghyuk Hahn, Hyunjoon Cheon, Yo-Sub Han<br/>
+      <em>International Journal of Foundations of Computer Science (IJFCS) – To appear</em><br/>
+      <a href="https://doi.org/10.1142/S0129054125410047">DOI</a>
+    </div>
+
+    <div class="paper journal visible">
+      <strong>On the Decidability of Infix Inclusion Problem</strong><br/>
+      Hyunjoon Cheon, Joonghyuk Hahn, Yo-Sub Han<br/>
+      <em>Theory of Computing Systems, 2024</em><br/>
+      <!-- Add correct DOI -->
+    </div>
+
+    <!-- Conference Papers -->
+    <div class="paper conference visible">
+      <strong>Universal Rewriting Rules for the Parikh Matrix Injectivity Problem</strong><br/>
+      Ingyu Baek, Joonghyuk Hahn, Yo-Sub Han, Kai Salomaa<br/>
+      <em>DLT'24, LNCS 14791</em><br/>
+    </div>
+
+    <div class="paper conference visible">
+      <strong>SuperST: Superficial Self-Training for Few-Shot Text Classification</strong><br/>
+      Ju-Hyoung Lee, Joonghyuk Hahn, Hyeon-Tae Seo, Jiho Park, Yo-Sub Han<br/>
+      <em>LREC-COLING 2024</em><br/>
+    </div>
+
+    <div class="paper conference visible">
+      <strong>ATHENA: Mathematical Reasoning with Thought Expansion</strong><br/>
+      J.B. Kim, Hazel Kim, Joonghyuk Hahn, Yo-Sub Han<br/>
+      <em>EMNLP 2023</em><br/>
+    </div>
+
+    <div class="paper conference visible">
+      <strong>GDA: Grammar-based Data Augmentation for Text Classification using Slot Information</strong><br/>
+      Joonghyuk Hahn, Hyunjoon Cheon, Elizabeth Grace Orwig, Su-Hyeon Kim, Sang-Ki Ko, Yo-Sub Han<br/>
+      <em>Findings of EMNLP 2023</em><br/>
+    </div>
+
+    <div class="paper conference visible">
+      <strong>M-equivalence of Parikh Matrix over a Ternary Alphabet</strong><br/>
+      Joonghyuk Hahn, Hyunjoon Cheon, Yo-Sub Han<br/>
+      <em>CIAA'23, LNCS 14151</em><br/>
+    </div>
+
+    <div class="paper conference visible">
+      <strong>Boosting Code Summarization by Embedding Code Structures</strong><br/>
+      Jikyoeng Son, Joonghyuk Hahn, Hyeon-Tae Seo, Yo-Sub Han<br/>
+      <em>COLING'22</em><br/>
+    </div>
+
+    <div class="paper conference visible">
+      <strong>On the Decidability of Infix Inclusion Problem</strong><br/>
+      Hyunjoon Cheon, Joonghyuk Hahn, Yo-Sub Han<br/>
+      <em>DLT'22, LNCS 13257</em><br/>
+    </div>
+
+    <div class="paper conference visible">
+      <strong>Self-Training using Rules of Grammar for Few-Shot NLU</strong><br/>
+      Joonghyuk Hahn, Hyunjoon Cheon, Kyuyeol Han, Cheongjae Lee, Junseok Kim, Yo-Sub Han<br/>
+      <em>Findings of EMNLP 2021</em><br/>
+    </div>
+
+    <div class="paper conference visible">
+      <strong>Most Pseudo-copy Languages Are Not Context-free</strong><br/>
+      Hyunjoon Cheon, Joonghyuk Hahn, Yo-Sub Han, Sang-Ki Ko<br/>
+      <em>COCOON'21</em><br/>
+    </div>
+
+    <!-- To Appear -->
+    <div class="paper arxiv visible">
+      <strong>TCProF: Time-Complexity Prediction SSL Framework</strong><br/>
+      Joonghyuk Hahn, Hyeseon Ahn, Jungin Kim, Soohan Lim, Yo-Sub Han<br/>
+      <em>To appear in NAACL 2025</em><br/>
+      <a href="https://arxiv.org/abs/2502.15749">arXiv</a>
+    </div>
+
+  </div>
+
+  <script>
+    function filterPubs(category) {
+      const papers = document.querySelectorAll('.paper');
+      papers.forEach(paper => {
+        if (category === 'all' || paper.classList.contains(category)) {
+          paper.classList.add('visible');
+        } else {
+          paper.classList.remove('visible');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
