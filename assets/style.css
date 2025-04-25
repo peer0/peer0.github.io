@@ -30,6 +30,15 @@ header p {
   font-size: 1rem;
   color: #57606a;
 }
+ 
+ header img {
+   width: 140px;
+   height: 140px;
+   border-radius: 50%;
+   margin-top: 1em;
+   font-size: 1rem;
+   color: #57606a;
+ }
 
 /* Navigation */
 nav {
