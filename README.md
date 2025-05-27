@@ -1,6 +1,6 @@
 # Joonghyuk Hahn's Academic Website
 
-This is my personal academic website where I showcase my research, publications, and CV. You can visit the site at [https://joonghyukhahn.github.io](https://joonghyukhahn.github.io).
+This is my personal academic website where I showcase my research, publications, and CV. You can visit the site at [https://peer0.github.io](https://peer0.github.io).
 
 ## Features
 - Research interests and publications
