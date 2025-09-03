@@ -118,3 +118,13 @@ footer {
   color: #57606a;
   font-size: 0.9rem;
 }
+
+#news .news-scroller {
+  /* 대략 3개 항목이 보이도록 높이 조정 (항목 줄바꿈 시 값만 살짝 조절) */
+  max-height: 9.5rem;
+  overflow-y: auto;
+  padding-right: 0.25rem; /* 스크롤바가 텍스트 가리지 않도록 */
+  scrollbar-gutter: stable; /* 크롬/사파리에서 레이아웃 흔들림 방지 */
+}
+#news .news-scroller ul {
+  margin: 0; /* 섹션 기본 여백 제거해 깔끔하게 */
