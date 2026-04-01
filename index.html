@@ -3,14 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Joonghyuk Hahn</title>
+  <title>Joonghyuk (Jude) Hahn</title>
   <link rel="stylesheet" href="assets/style.css" />
+  <style>
+    .job-status-banner {
+      background-color: #f0f7ff;
+      border-left: 5px solid #007bff;
+      padding: 1rem;
+      margin: 1.5rem 0;
+      font-size: 1.05rem;
+      line-height: 1.5;
+    }
+    .highlight { color: #007bff; font-weight: bold; }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Joonghyuk Hahn</h1>
-    <p>PhD Candidate in Computer Science, Yonsei University</p>
-    <img src="assets/profile.jpg" alt="Profile photo" width="150" />
+    <h1>Joonghyuk (Jude) Hahn</h1>
+    <p>Ph.D. in Computer Science, Yonsei University</p>
+    <img src="assets/profile.jpg" alt="Joonghyuk Hahn Profile Photo" width="150" />
   </header>
 
   <nav>
@@ -22,26 +33,36 @@
     </ul>
   </nav>
 
+  <div class="job-status-banner">
+    <strong>🚀 Looking for Opportunities:</strong> I have successfully defended my Ph.D. at Yonsei University (Feb 2026).
+    I am actively seeking <strong>Postdoctoral</strong> or <strong>Research Scientist</strong> positions
+    focusing on <span class="highlight">AI safety, neuro-symbolic AI, code intelligence, and NLP</span>.
+  </div>
+
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I am a PhD candidate in Computer Science at 
-      <a href="https://toc.yonsei.ac.kr/" target="_blank">Theory of Computation (ToC) Lab</a>, Yonsei University. 
-      My research bridges formal language theory and natural language processing (NLP), with a focus on topics such as 
-      M-unambiguous languages, language sparsity, and probability convergence. On the NLP side, I work on few-shot learning, 
-      self-training techniques, and grammar-based data augmentation. I’m nearing the end of my PhD and have published multiple papers 
-      in both theoretical and applied domains.
+      I am a researcher dedicated to building <strong>provably safe, verifiable, and trustworthy AI systems</strong>. 
+      I earned my Ph.D. in Computer Science from <a href="https://toc.yonsei.ac.kr/" target="_blank">Yonsei University</a> under
+      the supervision of <a href="https://toc.yonsei.ac.kr/yosh/" target="_blank">Prof. Yo-Sub Han</a>. 
+      My dissertation, titled <em>"Symbolic Techniques for Deep Learning in Natural Language Processing and Program Analysis,"</em>
+      explores the intersection of formal methods and modern neural models.
+    </p>
+    <p>
+      My research vision is to bridge <strong>formal language theory and AI/NLP</strong>. 
+      By applying theoretical tools like formal grammars and automata,
+      I create frameworks where AI behavior can be formally specified and mathematically verified, moving beyond heuristics to rigorous guarantees.
     </p>
   </section>
 
   <section id="research">
-    <h2>Research</h2>
+    <h2>Research Vision & Interests</h2>
     <ul>
-      <li>M-equivalence, strong M-equivalence, and language sparsity</li>
-      <li>Formal language theory and computational complexity</li>
-      <li>Natural language processing (NLP) with a focus on few-shot learning and self-training techniques</li>
-      <li>Grammar-based data augmentation and its application in text classification</li>
-      <li>Parikh matrix mapping and its relevance to computational linguistics</li>
+      <li><strong>Verifiable AI Safety:</strong> Formalizing safety constraints as decidable properties to develop systems with mathematical verification of outputs.</li>
+      <li><strong>Symbolic-Neural Integration:</strong> Bridging symbolic methods (logical constraints, decidability) with neural models for compositional generalization and systematic problem-solving.</li>
+      <li><strong>Constrained & Controllable Generation:</strong> Developing grammar-based frameworks for structured, safe generation in code synthesis and mathematical reasoning.</li>
+      <li><strong>Mechanistic Interpretability:</strong> Using automata theory to understand the internal circuits and reasoning processes of LLMs.</li>
+      <li><strong>Neuro-Symbolic Program Analysis:</strong> Structure-aware semi-supervised learning for reliable code summarization and complexity prediction.</li>
     </ul>
   </section>
 
@@ -49,13 +70,18 @@
     <h2>Recent News</h2>
     <div class="news-scroller" aria-label="Recent news (scroll for more)">
     <ul>
-      <li>📚 <strong>Three papers (2 Main & 1 Findings)</strong> accepted at EACL 2026. <a href="https://aclanthology.org/2026.findings-eacl.331/" target="_blank">[Query4Regex]</a> <a href="https://aclanthology.org/2026.eacl-long.379/" target="_blank">[LRR]</a> <a href="https://aclanthology.org/2026.eacl-long.375/" target="_blank">[Regex Minimization]</a></li>
-      <li>📄 <strong>EnCur: Curriculum‑Based In‑Context Learning with Structural Encoding for Code Time Complexity Prediction</strong> accepted at ESWA 2026. <a href="https://www.sciencedirect.com/science/article/pii/S0957417425027113" target="_blank">Read more</a></li>
-      <li>🎤 Gave a presentation about <strong>Sparsity of M-unambiguous Languages</strong> at DLT 2025 on August 19th. <a href="https://cida.uos.ac.kr/dlt2025/program/" target="_blank">Read more</a></li>
-      
-      <li>📄 I had an oral presentation of our paper, <strong>TCProF: Time-Complexity Prediction SSL Framework</strong>, in NAACL 2025. <a href="https://aclanthology.org/2025.naacl-long.482" target="_blank">Read more</a></li>
-      <li>📄 <strong>Advanced code time complexity prediction approach using contrastive learning</strong> accepted at EAAI 2025. <a href="https://doi.org/10.1016/j.engappai.2025.110631" target="_blank">Read more</a></li>
-      <li>📄 <strong>Characterizations of M-equivalence and Weak M-relation</strong> accepted at IJFCS 2025. <a href="https://doi.org/10.1142/S0129054125410047" target="_blank">Read more</a></li>
+      <li>📚 <strong>Three papers accepted at EACL 2026</strong>: 
+        <ul>
+          <li><a href="#" target="_blank"><strong>Query4Regex:</strong></a> Verifiable regex transformation via formal operations.</li>
+          <li><a href="#" target="_blank"><strong>Repairing Regex Vulnerabilities:</strong></a> Localization-guided reliability-oriented repair.</li>
+          <li><a href="#" target="_blank"><strong>Regex Minimization:</strong></a> A PSPACE-complete challenge benchmark for LLMs.</li>
+        </ul>
+      <li>🎤 Gave a presentation about <strong>Sparsity of M-unambiguous Languages</strong> at DLT 2025 on August 19th.
+        <a href="https://cida.uos.ac.kr/dlt2025/program/" target="_blank">Read more</a></li>
+      <li>📄 <strong>EnCur: Curriculum-Based ICL with Structural Encoding</strong> published in <strong>ESWA 2026</strong>.</li>
+      <li>📄 <strong>TCProF: Time-Complexity Prediction SSL Framework</strong> presented at <strong>NAACL 2025</strong>.</li>
+      <li>📄 <strong>Characterizations of M-equivalence</strong> published in <strong>IJFCS 2025</strong>.</li>
+      <li>📄 <strong>Advanced Code Time Complexity Prediction</strong> published in <strong>EAAI 2025</strong>.</li>
     </ul>
     </div>
   </section>
