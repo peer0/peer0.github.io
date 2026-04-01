@@ -4,6 +4,44 @@
   padding: 0;
   box-sizing: border-box;
 }
+#job-market {
+  margin-bottom: 20px;
+}
+
+.status-card {
+  background-color: #f8f9fa; /* 아주 연한 회색으로 차분하게 */
+  border: 1px solid #e9ecef;
+  border-left: 4px solid #007bff; /* 파란색 포인트 선만 유지 */
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.status-badge {
+  font-weight: bold;
+  color: #007bff;
+  font-size: 1.1rem;
+}
+
+.status-location {
+  font-size: 0.95rem;
+  color: #666;
+  font-style: italic;
+}
+
+.status-card p {
+  margin: 0;
+  line-height: 1.6;
+  color: #333;
+}
 
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
