@@ -163,7 +163,7 @@ def cv():
     projects = ''.join(cv_entry(p['dates'],E(p['title']),f'<p>{E(p["organisation"])}</p><p>{E(p["description"])}</p>') for p in S['projects'])
     teaching = ''.join(cv_entry(p['dates'],E(p['title']),f'<p>{E(p["description"])}</p>') for p in S['teaching'])
     teaching += cv_entry('Since 2022','Reviewing & program committees',f'<p>{E(S["service"])}</p>')
-    return f'''<main id="main" class="wrap"><div class="page-intro split"><div><p class="eyebrow">Background & experience</p><h1>Curriculum vitae.</h1><p class="lede">{E(S['role'])} · {E(S['university'])}</p></div><a class="button" href="Joonghyuk_Hahn_CV.pdf" download="Joonghyuk_Hahn_CV.pdf">Download CV <span aria-hidden="true">↓</span></a></div>
+    return f'''<main id="main" class="wrap"><div class="page-intro split"><div><p class="eyebrow">Background & experience</p><h1>Curriculum vitae.</h1><p class="lede">{E(S['role'])} · {E(S['university'])}</p></div><a class="button" href="Joonghyuk_Hahn_CV.pdf" target="_blank" rel="noopener" aria-label="View CV as PDF (opens in a new tab)">View CV (PDF) <span aria-hidden="true">↗</span></a></div>
 <div class="cv-layout"><nav class="cv-nav" aria-label="CV sections">{navigation}</nav><div>
 <section class="cv-section" id="appointments"><h2>Appointments</h2>{appointments}</section>
 <section class="cv-section" id="education"><h2>Education</h2>{education}</section>
