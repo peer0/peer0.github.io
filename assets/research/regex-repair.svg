@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 220" role="img"><title>Illustrative language-preserving regex simplification: nested repetition (a+)+ becomes a+.</title><defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M 24 0 L 0 0 0 24" fill="none" stroke="#295a46" stroke-opacity=".06"/></pattern><marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0 0L6 3L0 6" fill="none" stroke="#295a46" stroke-width="1"/></marker></defs><rect width="560" height="220" fill="#f1ede3"/><rect width="560" height="220" fill="url(#grid)"/><g font-family="Arial,sans-serif" fill="#263c31"><text x="32" y="31" font-size="11" fill="#756c5e" letter-spacing="1.8">LOCALIZE THE PROBLEM. GUIDE THE REPAIR.</text>
+<rect x="43" y="65" width="195" height="89" rx="6" fill="#fdfbf6" stroke="#d6c6ad"/><rect x="83" y="91" width="113" height="41" rx="3" fill="#f0ded2"/>
+<text x="141" y="124" text-anchor="middle" font-size="37" font-family="Georgia,serif" fill="#8c503d">(a+)+</text>
+<text x="141" y="174" text-anchor="middle" font-size="12" fill="#756c5e">Nested repetition</text>
+<path d="M255 110H310" stroke="#295a46" stroke-width="1.5" marker-end="url(#arrow)"/><text x="282" y="87" text-anchor="middle" font-size="12" fill="#637366">repair</text>
+<rect x="327" y="65" width="185" height="89" rx="6" fill="#e5ede1" stroke="#bdcdb5"/><text x="420" y="125" text-anchor="middle" font-size="47" font-family="Georgia,serif" fill="#295a46">a+</text>
+<text x="420" y="174" text-anchor="middle" font-size="12" fill="#637366">Same language</text>
+<text x="32" y="204" font-size="11" fill="#756c5e">Illustrative simplification</text></g></svg>

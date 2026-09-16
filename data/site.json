@@ -1,0 +1,199 @@
+{
+  "name": "Joonghyuk Hahn",
+  "name_ko": "한중혁",
+  "role": "Postdoctoral Researcher",
+  "university": "Linköping University",
+  "university_url": "https://liu.se/en",
+  "department": "Department of Computer and Information Science (IDA)",
+  "department_url": "https://liu.se/en/organisation/liu/ida",
+  "division": "Cybersecurity (CYBER)",
+  "division_url": "https://liu.se/en/organisation/liu/ida/cyber",
+  "group": "Trustworthy Systems Group (TSG)",
+  "group_url": "https://liu.se/en/organisation/liu/ida/cyber",
+  "centre": "RESIST",
+  "centre_full": "Resilience and Security for Trustworthy AI Systems",
+  "centre_url": "https://liu.se/en/research/resist",
+  "host": "Simin Nadjm-Tehrani",
+  "host_url": "https://liu.se/en/employee/simna73",
+  "location": "Linköping, Sweden",
+  "email": "joong.hyuk.hahn@liu.se",
+  "personal_email": "jayhahn0626@gmail.com",
+  "site_url": "https://peer0.github.io",
+  "updated": "2026-09-16",
+  "headline": "Trustworthy AI, grounded in language and structure.",
+  "research_intro": "I study how symbolic methods and language structure can make AI systems more reliable, verifiable, and useful.",
+  "research_detail": "My work connects formal language theory with modern AI: evaluating what language models can reliably do, checking the correctness of their outputs, and improving how they reason about programs.",
+  "phd_advisor": "Yo-Sub Han",
+  "phd_advisor_url": "https://toc.yonsei.ac.kr/yosh/",
+  "thesis": "Symbolic Techniques for Deep Learning in Natural Language Processing and Program Analysis",
+  "profiles": [
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=08ccS2oAAAAJ"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/peer0"
+    },
+    {
+      "label": "DBLP",
+      "url": "https://dblp.org/pid/304/4027.html"
+    },
+    {
+      "label": "ORCID",
+      "url": "https://orcid.org/0009-0000-5890-4916"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/joonghyuk-hahn"
+    }
+  ],
+  "themes": [
+    {
+      "id": "verification",
+      "label": "Verification & safety",
+      "title": "Can we check what AI produces?",
+      "text": "Formal specifications, verifiable transformations, and symbolic guidance for more reliable generation and repair.",
+      "keywords": "Verification · Program repair · AI safety",
+      "topics": [
+        "verification"
+      ]
+    },
+    {
+      "id": "code",
+      "label": "Code intelligence",
+      "title": "Can AI reason about programs?",
+      "text": "Structure-aware methods for code analysis, complexity prediction, and evaluation beyond functional correctness.",
+      "keywords": "Code generation · Complexity · Evaluation",
+      "topics": [
+        "code"
+      ]
+    },
+    {
+      "id": "formal",
+      "label": "Language & foundations",
+      "title": "What does structure make possible?",
+      "text": "Formal grammars, automata, and symbolic learning as foundations for understanding language and computation.",
+      "keywords": "Formal languages · Neuro-symbolic AI · NLP",
+      "topics": [
+        "formal",
+        "language"
+      ]
+    }
+  ],
+  "selected_ids": [
+    "pub-08",
+    "pub-09",
+    "pub-06",
+    "pub-13"
+  ],
+  "news": [
+    {
+      "date": "Sep 2026",
+      "text": "I joined Linköping University as a postdoctoral researcher in the Trustworthy Systems Group, within the Cybersecurity division, working with Simin Nadjm-Tehrani as part of RESIST.",
+      "url": "https://liu.se/en/research/resist",
+      "link_text": "About RESIST",
+      "featured": true
+    },
+    {
+      "date": "Jul 2026",
+      "text": "ContractEval, a benchmark for checking whether generated code enforces its input contracts, appears in Findings of ACL 2026.",
+      "url": "https://aclanthology.org/2026.findings-acl.2112/",
+      "link_text": "Paper"
+    },
+    {
+      "date": "Mar 2026",
+      "text": "Three papers at EACL 2026: Query4Regex in Findings, and work on regex vulnerability repair and regex minimization in the main conference.",
+      "url": "publications.html?q=EACL+2026",
+      "link_text": "Read the papers"
+    },
+    {
+      "date": "Feb 2026",
+      "text": "I received my Ph.D. in Computer Science from Yonsei University, advised by Yo-Sub Han.",
+      "url": "cv.html#education",
+      "link_text": "Background"
+    },
+    {
+      "date": "2026",
+      "text": "EnCur, our work on curriculum-based in-context learning for code time complexity prediction, appears in Expert Systems with Applications.",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0957417425027113",
+      "link_text": "Paper"
+    },
+    {
+      "date": "Aug 2025",
+      "text": "I presented work on the sparsity of M-unambiguous languages at DLT 2025.",
+      "url": "https://cida.uos.ac.kr/dlt2025/program/",
+      "link_text": "Conference program"
+    },
+    {
+      "date": "2025",
+      "text": "TCProF, our semi-supervised framework for time-complexity prediction, was presented at NAACL 2025.",
+      "url": "https://aclanthology.org/2025.naacl-long.482/",
+      "link_text": "Paper"
+    }
+  ],
+  "projects": [
+    {
+      "dates": "2023–2025",
+      "title": "Human–AI Programming Platform Research",
+      "organisation": "Ministry of Science and ICT, Republic of Korea",
+      "description": "Human-in-the-loop workflows for understanding programming intent and generating reliable source code."
+    },
+    {
+      "dates": "2023–2024",
+      "title": "Financial Data Analysis & Transformation",
+      "organisation": "Bankware Global",
+      "description": "Financial-data transformation for language-model reasoning and retrieval, with domain adaptation under limited expert data."
+    },
+    {
+      "dates": "2022",
+      "title": "5th AI Grand Challenge",
+      "organisation": "Ministry of Science and ICT, Republic of Korea",
+      "description": "Deep learning for mathematical problem solving, including equation-based training-data generation and participation in the competition finals."
+    },
+    {
+      "dates": "2019–2022",
+      "title": "Human–AI Collaborative Programming Platform",
+      "organisation": "Ministry of Science and ICT, Republic of Korea",
+      "description": "Neuro-symbolic and semi-supervised methods for code summarization and complexity analysis."
+    },
+    {
+      "dates": "2019–2022",
+      "title": "Automated Malware Pattern Rule-set Generation",
+      "organisation": "Ministry of Science and ICT, Republic of Korea",
+      "description": "Learning malware patterns and studying rule-set compression and synthesis for automated detection."
+    },
+    {
+      "dates": "2019–2020",
+      "title": "EEG Rule Extraction & Data Similarity Approximation",
+      "organisation": "Yonsei University",
+      "description": "Project proposal and similarity-algorithm research."
+    }
+  ],
+  "teaching": [
+    {
+      "dates": "2021–2023",
+      "title": "Undergraduate research mentoring",
+      "description": "Formal grammar and computational linguistics."
+    },
+    {
+      "dates": "2019–2022",
+      "title": "Teaching Assistant, Automata & Formal Languages",
+      "description": "Yonsei University."
+    }
+  ],
+  "service": "Reviewer / PC member for ACL Rolling Review and EMNLP; service since 2022.",
+  "additional_manuscripts": [
+    {
+      "title": "A Voronoi-Embedding Framework for Semi-Supervised Time-Complexity Prediction",
+      "authors": "Hyeseon Ahn, Joonghyuk Hahn, Yo-Sub Han"
+    },
+    {
+      "title": "Universal Rewriting Rules for the Parikh Matrix Injectivity Problem (Journal Extension)",
+      "authors": "Ingyu Baek*, Joonghyuk Hahn*, Yo-Sub Han, Kai Salomaa"
+    }
+  ],
+  "start": "Sep 2026",
+  "now_title": "Now at Linköping",
+  "now": "Today's language models read untrusted content and act through tools, so trusting them takes more than a better filter. At Linköping, as part of RESIST, I work where LLM verification meets LLM security: checking what these systems produce, understanding how they fail under attack, and recognizing when they should refuse."
+}

@@ -1,234 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Publications</title>
-  <link rel="stylesheet" href="assets/style.css" />
-  <style>
-    .filter-btns {
-      text-align: center;
-      margin-bottom: 1.5em;
-    }
-
-    .filter-btns button {
-      margin: 5px;
-      padding: 8px 15px;
-      cursor: pointer;
-      background-color: #3498db;
-      border: none;
-      color: white;
-      border-radius: 5px;
-      font-weight: 600;
-    }
-
-    .filter-btns button:hover {
-      background-color: #2980b9;
-    }
-
-    .paper {
-      margin-bottom: 1.5em;
-      display: none;
-    }
-
-    .visible {
-      display: block;
-    }
-
-    .paper em {
-      display: inline; /* Was 'block', which caused the gap */
-      margin: 0;
-      font-style: italic;
-    }
-    
-    .paper a {
-      font-size: 0.95em;
-      display: inline-block;
-      margin-left: 0.5em;
-    }
-
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Publications</h1>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
- <section>
-    <div class="filter-btns">
-      <button onclick="filterPubs('all')">All</button>
-      <button onclick="filterPubs('journal')">Journals</button>
-      <button onclick="filterPubs('conference')">Conferences</button>
-      <button onclick="filterPubs('arxiv')">Preprints</button>
-    </div>
-
-  <div id="pub-list">
-
-    <!-- Journal Papers -->
-    <div class="paper journal visible">
-      <strong>EnCur: Curriculum‑Based In‑Context Learning with Structural Encoding for Code Time Complexity Prediction</strong><br/>
-      Joonghyuk Hahn, Aditi, Seung-Yeop Baik, Shinwoo Park, Sang-Ki Ko, Yo-Sub Han<br/>
-      <em>Expert Systems With Applications (ESWA) 2026</em><br/>
-      <a href="https://www.sciencedirect.com/science/article/pii/S0957417425027113" target="_blank">[Link]</a>
-    </div>
-
-    <div class="paper journal visible">
-      <strong>Advanced Code Time Complexity Prediction Approach Using Contrastive Learning</strong><br/>
-      Shinwoo Park, Joonghyuk Hahn, Elizabeth Orwig, Sang-Ki Ko, Yo-Sub Han<br/>
-      <em>Engineering Applications of Artificial Intelligence (EAAI) 2025</em><br/><a href="https://doi.org/10.1016/j.engappai.2025.110631" target="_blank">[Link]</a>
-    </div>
-
-    <div class="paper journal visible">
-      <strong>Characterizations of M-equivalence and Weak M-relation</strong><br/>
-      Joonghyuk Hahn<sup>*</sup>, Hyunjoon Cheon<sup>*</sup>, Yo-Sub Han<br/>
-      <em>International Journal of Foundations of Computer Science (IJFCS) 2025</em><br/><a href="https://doi.org/10.1142/S0129054125410047" target="_blank">[Link]</a>
-    </div>
-
-    <div class="paper journal visible">
-      <strong>On the Decidability of Infix Inclusion Problem</strong><br/>
-      Hyunjoon Cheon<sup>*</sup>, Joonghyuk Hahn<sup>*</sup>, Yo-Sub Han<br/>
-      <em>Theory of Computing Systems (ToCS) 2024</em><br/><a href="https://doi.org/10.1007/s00224-023-10160-w" target="_blank">[Link]</a>
-    </div>
-
-    <!-- Preprints arxiv Papers -->
-    <div class="paper arxiv visible">
-      <strong>MEC$^3$O: Multi-Expert Consensus for Code Time Complexity Prediction</strong><br/>
-      Joonghyuk Hahn<sup>*</sup>, Soohan Lim<sup>*</sup>, Yo-Sub Han<br/>
-      <em>Under review</em><br/>
-      <a href="https://arxiv.org/abs/2510.09049" target="_blank">[Link]</a>
-    </div>
-
-    <div class="paper arxiv visible">
-      <strong>ContractEval: A Benchmark for Evaluating Contract-Satisfying Assertions in Code Generation</strong><br/>
-      Soohan Lim<sup>*</sup>, Joonghyuk Hahn<sup>*</sup>, Yo-Sub Han<br/>
-      <em>Under review</em><br/>
-      <a href="https://arxiv.org/abs/2510.12047" target="_blank">[Link]</a>
-    </div>
-
-    <div class="paper arxiv visible">
-      <strong>ECO: Enhanced Code Optimization via Performance-Aware Prompting for Code-LLMs</strong><br/>
-      Su-Hyeon Kim, Joonghyuk Hahn, Sooyung Cha, Yo-Sub Han<br/>
-      <em>Under review</em><br/>
-      <a href="https://arxiv.org/abs/2510.10517" target="_blank">[Link]</a>
-    </div>
-    
-
-    <!-- Conference Papers -->
-    <div class="paper conference visible">
-      <strong>Query4Regex: Verifiable Regex Transformation through Formal Operations from NL and DSL Queries</strong><br/>
-      Joonghyuk Hahn, Yo-Sub Han<br/>
-      <em>Findings of EACL 2026</em><br/><a href="https://aclanthology.org/2026.findings-eacl.331/" target="_blank">[Link]</a>
-    </div>
-      
-    <div class="paper conference visible">
-      <strong>Repairing Regex Vulnerabilities via Localization-Guided Instructions</strong><br/>
-      Sicheol Sung<sup>*</sup>, Joonghyuk Hahn<sup>*</sup>, Yo-Sub Han<br/>
-      <em>EACL 2026</em><br/><a href="https://aclanthology.org/2026.eacl-long.379/" target="_blank">[Link]</a>
-    </div>
-      
-    <div class="paper conference visible">
-      <strong>A Regex Minimization Benchmark: A PSPACE-Complete Challenge for Language Models</strong><br/>
-      Hyundong Jin, Joonghyuk Hahn, Yo-Sub Han<br/>
-      <em>EACL 2026</em><br/><a href="https://aclanthology.org/2026.eacl-long.375/" target="_blank">[Link]</a>
-    </div>
-
-    <div class="paper conference visible">      
-      <strong>AmpleHate: Amplifying the Attention for Versatile Implicit Hate Detection</strong><br/>
-      Yejin Lee, Joonghyuk Hahn, Hyeseon Ahn, Yo-Sub Han<br/>
-      <em>EMNLP 2025</em><br/><a href="https://aclanthology.org/2025.emnlp-main.1469" target="_blank">[Link]</a>
-    </div>
-    
-    <div class="paper conference visible">
-      <strong>CodeComplex: Dataset for Worst-Case Time Complexity Prediction</strong><br/>
-      Seung-Yeop Baik, Joonghyuk Hahn, Jungin Kim, Mingi Jeon, Aditi, Yo-Sub Han, Sang-Ki Ko<br/>
-      <em>Findgins of EMNLP 2025</em><br/>
-      <a href="https://aclanthology.org/2025.findings-emnlp.1069" target="_blank">[Link]</a>
-    </div>
-    
-    <div class="paper conference visible">
-      <strong>TCProF: Time-Complexity Prediction SSL Framework</strong><br/>
-      Joonghyuk Hahn, Hyeseon Ahn, Jungin Kim, Soohan Lim, Yo-Sub Han<br/>
-      <em>NAACL 2025</em><br/><a href="https://aclanthology.org/2025.naacl-long.482" target="_blank">[Link]</a>
-    </div>
-    
-    <div class="paper conference visible">
-      <strong>Universal Rewriting Rules for the Parikh Matrix Injectivity Problem</strong><br/>
-      Ingyu Baek<sup>*</sup>, Joonghyuk Hahn<sup>*</sup>, Yo-Sub Han, Kai Salomaa<br/>
-      <em>DLT 2024, LNCS 14791</em><br/><a href="https://doi.org/10.1007/978-3-031-66159-4_6" target="_blank">[Link]</a>
-    </div>
-
-    <div class="paper conference visible">
-      <strong>SuperST: Superficial Self-Training for Few-Shot Text Classification</strong><br/>
-      Ju-Hyoung Lee<sup>*</sup>, Joonghyuk Hahn<sup>*</sup>, Hyeon-Tae Seo, Jiho Park, Yo-Sub Han<br/>
-      <em>LREC-COLING 2024</em><br/><a href="https://aclanthology.org/2024.lrec-main.1341" target="_blank">[Link]</a>
-    </div>
-
-    <div class="paper conference visible">
-      <strong>ATHENA: Mathematical Reasoning with Thought Expansion</strong><br/>
-      J.B. Kim, Hazel Kim, Joonghyuk Hahn, Yo-Sub Han<br/>
-      <em>EMNLP 2023</em><br/><a href="https://aclanthology.org/2023.emnlp-main.1014/" target="_blank">[Link]</a>
-    </div>
-
-    <div class="paper conference visible">
-      <strong>GDA: Grammar-based Data Augmentation for Text Classification using Slot Information</strong><br/>
-      Joonghyuk Hahn<sup>*</sup>, Hyunjoon Cheon<sup>*</sup>, Elizabeth Grace Orwig, Su-Hyeon Kim, Sang-Ki Ko, Yo-Sub Han<br/>
-      <em>Findings of EMNLP 2023</em><br/><a href="https://aclanthology.org/2023.findings-emnlp.486" target="_blank">[Link]</a>
-    </div>
-
-    <div class="paper conference visible">
-      <strong>M-equivalence of Parikh Matrix over a Ternary Alphabet</strong><br/>
-      Joonghyuk Hahn<sup>*</sup>, Hyunjoon Cheon<sup>*</sup>, Yo-Sub Han<br/>
-      <em>CIAA 2023, LNCS 14151</em><br/><a href="https://doi.org/10.1007/978-3-031-40247-0_10" target="_blank">[Link]</a>
-    </div>
-
-    <div class="paper conference visible">
-      <strong>Boosting Code Summarization by Embedding Code Structures</strong><br/>
-      Jikyoeng Son<sup>*</sup>, Joonghyuk Hahn<sup>*</sup>, Hyeon-Tae Seo, Yo-Sub Han<br/>
-      <em>COLING 2022</em><br/><a href="https://aclanthology.org/2022.coling-1.521" target="_blank">[Link]</a>
-    </div>
-
-    <div class="paper conference visible">
-      <strong>On the Decidability of Infix Inclusion Problem</strong><br/>
-      Hyunjoon Cheon<sup>*</sup>, Joonghyuk Hahn<sup>*</sup>, Yo-Sub Han<br/>
-      <em>DLT 2022, LNCS 13257</em><br/><a href="https://doi.org/10.1007/978-3-031-05578-2_9" target="_blank">[Link]</a>
-    </div>
-
-    <div class="paper conference visible">
-      <strong>Self-Training using Rules of Grammar for Few-Shot NLU</strong><br/>
-      Joonghyuk Hahn<sup>*</sup>, Hyunjoon Cheon<sup>*</sup>, Kyuyeol Han, Cheongjae Lee, Junseok Kim, Yo-Sub Han<br/>
-      <em>Findings of EMNLP 2021</em><br/><a href="https://aclanthology.org/2021.findings-emnlp.389" target="_blank">[Link]</a>
-    </div>
-
-    <div class="paper conference visible">
-      <strong>Most Pseudo-copy Languages Are Not Context-free</strong><br/>
-      Hyunjoon Cheon<sup>*</sup>, Joonghyuk Hahn<sup>*</sup>, Yo-Sub Han, Sang-Ki Ko<br/>
-      <em>COCOON 2021</em><br/><a href="https://doi.org/10.1007/978-3-030-89543-3_16" target="_blank">[Link]</a>
-
-  </div>
-
-  <p><small><sup>*</sup> indicates co-first authorship.</small></p>
-</section>
-
-  <script>
-    function filterPubs(category) {
-      const papers = document.querySelectorAll('.paper');
-      papers.forEach(paper => {
-        if (category === 'all' || paper.classList.contains(category)) {
-          paper.classList.add('visible');
-        } else {
-          paper.classList.remove('visible');
-        }
-      });
-    }
-  </script>
-</body>
-</html>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publications | Joonghyuk Hahn</title>
+<meta name="description" content="Publications by Joonghyuk Hahn in verification, code intelligence, NLP, and formal language theory."><meta name="author" content="Joonghyuk Hahn">
+<meta name="theme-color" content="#173e30"><meta name="color-scheme" content="light">
+<link rel="canonical" href="https://peer0.github.io/publications.html"><link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<meta property="og:type" content="website"><meta property="og:locale" content="en_US">
+<meta property="og:title" content="Publications | Joonghyuk Hahn"><meta property="og:description" content="Publications by Joonghyuk Hahn in verification, code intelligence, NLP, and formal language theory."><meta property="og:url" content="https://peer0.github.io/publications.html">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Publications | Joonghyuk Hahn"><meta name="twitter:description" content="Publications by Joonghyuk Hahn in verification, code intelligence, NLP, and formal language theory.">
+<link rel="stylesheet" href="assets/style.css"><script src="assets/site.js" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Joonghyuk Hahn", "alternateName": "한중혁", "url": "https://peer0.github.io", "jobTitle": "Postdoctoral Researcher", "affiliation": {"@type": "Organization", "name": "Linköping University", "url": "https://liu.se/en"}, "sameAs": ["https://scholar.google.com/citations?user=08ccS2oAAAAJ", "https://github.com/peer0", "https://dblp.org/pid/304/4027.html", "https://orcid.org/0009-0000-5890-4916", "https://www.linkedin.com/in/joonghyuk-hahn"], "knowsAbout": ["Trustworthy AI", "Formal language theory", "Code intelligence", "Neuro-symbolic AI"]}</script>
+</head><body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap header-inner">
+<a href="index.html" class="brand"><span class="monogram" aria-hidden="true">jh</span>Joonghyuk Hahn</a>
+<button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-navigation" hidden>Menu <span aria-hidden="true">☰</span></button>
+<nav class="site-nav" id="site-navigation" aria-label="Main navigation"><a href="index.html">Home</a><a href="publications.html" aria-current="page">Publications</a><a href="cv.html">CV</a><a href="contact.html">Contact</a></nav></div></header>
+<main id="main" class="wrap"><div class="page-intro"><p class="eyebrow">Research output</p><h1>Publications.</h1><p class="lede">Work across verification, code intelligence, natural language processing, and formal language theory.</p><p class="fine-print">* Equal contribution. Preprints are identified separately from peer-reviewed publications.</p></div>
+<div class="publications-body"><div class="publication-controls" data-publication-controls hidden><div class="search-row"><div class="field"><label for="publication-search">Search publications <span class="search-hint" aria-hidden="true">Press <kbd>/</kbd></span></label><input id="publication-search" type="search" aria-keyshortcuts="/" placeholder="Title, author, venue, or keyword" autocomplete="off"></div><div class="field"><label for="publication-year">Year</label><select id="publication-year"><option value="all">All years</option><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option></select></div><div class="field"><label for="publication-type">Publication type</label><select id="publication-type"><option value="all">All types</option><option value="conference">Conferences</option><option value="journal">Journals</option><option value="preprint">Preprints</option></select></div></div><div class="topic-filters" role="group" aria-label="Research topic"><button type="button" data-topic-filter="all" aria-pressed="true">All research</button><button type="button" data-topic-filter="verification" aria-pressed="false">Verification & safety</button><button type="button" data-topic-filter="code" aria-pressed="false">Code intelligence</button><button type="button" data-topic-filter="language" aria-pressed="false">Language & learning</button><button type="button" data-topic-filter="formal" aria-pressed="false">Formal languages</button></div></div>
+<div class="results-line"><span id="publication-count" role="status" aria-live="polite">22 publications</span><button type="button" id="reset-filters" class="reset-button" hidden>Clear filters</button></div>
+<div id="no-publications" class="empty-state" hidden><h2>No matching publications.</h2><p>Try a different keyword or clear the filters above.</p></div><section class="publication-year-group" data-year-group aria-labelledby="year-2026"><h2 class="year-heading" id="year-2026">2026</h2><div><article class="publication" id="pub-01" data-paper data-topic="code" data-type="journal" data-year="2026" data-search="EnCur: Curriculum-Based In-Context Learning with Structural Encoding for Code Time Complexity Prediction Joonghyuk Hahn, Aditi, Seung-Yeop Baik, Shinwoo Park, Sang-Ki Ko, Yo-Sub Han Expert Systems With Applications (ESWA) 2026 2026  Code intelligence">
+<div class="publication-meta"><span class="venue journal">Expert Systems With Applications (ESWA) 2026</span><span class="publication-type">Journal</span></div><h3><a href="https://www.sciencedirect.com/science/article/pii/S0957417425027113" target="_blank" rel="noopener noreferrer">EnCur: Curriculum-Based In-Context Learning with Structural Encoding for Code Time Complexity Prediction</a></h3><p class="paper-authors"><strong>Joonghyuk Hahn</strong>, Aditi, Seung-Yeop Baik, Shinwoo Park, Sang-Ki Ko, Yo-Sub Han</p><div class="paper-links"><a href="https://www.sciencedirect.com/science/article/pii/S0957417425027113" target="_blank" rel="noopener noreferrer">Paper <span class="arrow" aria-hidden="true">↗</span></a></div><details class="citation"><summary>Cite this paper <span aria-hidden="true">+</span></summary><div class="citation-body"><p id="cite-pub-01" tabindex="-1">Joonghyuk Hahn, Aditi, Seung-Yeop Baik, Shinwoo Park, Sang-Ki Ko, Yo-Sub Han (2026). EnCur: Curriculum-Based In-Context Learning with Structural Encoding for Code Time Complexity Prediction. Expert Systems With Applications (ESWA) 2026. https://www.sciencedirect.com/science/article/pii/S0957417425027113</p><button type="button" data-copy-target="cite-pub-01" hidden>Copy reference</button></div></details></article><article class="publication" id="pub-06" data-paper data-topic="verification" data-type="conference" data-year="2026" data-search="ContractEval: A Benchmark for Evaluating Contract-Satisfying Assertions in Code Generation Soohan Lim*, Joonghyuk Hahn*, Hyunwoo Park, Sang-Ki Ko, Yo-Sub Han Findings of ACL 2026 2026 Evaluating whether generated code enforces input preconditions, beyond correctness on valid inputs. Verification &amp; safety">
+<div class="publication-meta"><span class="venue conference">Findings of ACL 2026</span><span class="publication-type">Conference</span></div><h3><a href="https://aclanthology.org/2026.findings-acl.2112/" target="_blank" rel="noopener noreferrer">ContractEval: A Benchmark for Evaluating Contract-Satisfying Assertions in Code Generation</a></h3><p class="paper-authors">Soohan Lim<sup>*</sup>, <strong>Joonghyuk Hahn</strong><sup>*</sup>, Hyunwoo Park, Sang-Ki Ko, Yo-Sub Han</p><p class="paper-summary">Evaluating whether generated code enforces input preconditions, beyond correctness on valid inputs.</p><div class="paper-links"><a href="https://aclanthology.org/2026.findings-acl.2112/" target="_blank" rel="noopener noreferrer">Paper <span class="arrow" aria-hidden="true">↗</span></a><a href="https://aclanthology.org/2026.findings-acl.2112.pdf" target="_blank" rel="noopener noreferrer">PDF <span class="arrow" aria-hidden="true">↗</span></a><a href="https://github.com/suhanmen/ContractEval" target="_blank" rel="noopener noreferrer">Code <span class="arrow" aria-hidden="true">↗</span></a></div><details class="citation"><summary>Cite this paper <span aria-hidden="true">+</span></summary><div class="citation-body"><p id="cite-pub-06" tabindex="-1">Soohan Lim, Joonghyuk Hahn, Hyunwoo Park, Sang-Ki Ko, Yo-Sub Han (2026). ContractEval: A Benchmark for Evaluating Contract-Satisfying Assertions in Code Generation. Findings of ACL 2026. https://aclanthology.org/2026.findings-acl.2112/</p><button type="button" data-copy-target="cite-pub-06" hidden>Copy reference</button></div></details></article><article class="publication" id="pub-08" data-paper data-topic="verification" data-type="conference" data-year="2026" data-search="Query4Regex: Verifiable Regex Transformation through Formal Operations from NL and DSL Queries Joonghyuk Hahn, Yo-Sub Han Findings of EACL 2026 2026 Evaluating regex transformations with formal operations and deterministic finite automata equivalence checks. Verification &amp; safety">
+<div class="publication-meta"><span class="venue conference">Findings of EACL 2026</span><span class="publication-type">Conference</span></div><h3><a href="https://aclanthology.org/2026.findings-eacl.331/" target="_blank" rel="noopener noreferrer">Query4Regex: Verifiable Regex Transformation through Formal Operations from NL and DSL Queries</a></h3><p class="paper-authors"><strong>Joonghyuk Hahn</strong>, Yo-Sub Han</p><p class="paper-summary">Evaluating regex transformations with formal operations and deterministic finite automata equivalence checks.</p><div class="paper-links"><a href="https://aclanthology.org/2026.findings-eacl.331/" target="_blank" rel="noopener noreferrer">Paper <span class="arrow" aria-hidden="true">↗</span></a><a href="https://aclanthology.org/2026.findings-eacl.331.pdf" target="_blank" rel="noopener noreferrer">PDF <span class="arrow" aria-hidden="true">↗</span></a><a href="https://github.com/peer0/Query4Regex" target="_blank" rel="noopener noreferrer">Code <span class="arrow" aria-hidden="true">↗</span></a></div><details class="citation"><summary>Cite this paper <span aria-hidden="true">+</span></summary><div class="citation-body"><p id="cite-pub-08" tabindex="-1">Joonghyuk Hahn, Yo-Sub Han (2026). Query4Regex: Verifiable Regex Transformation through Formal Operations from NL and DSL Queries. Findings of EACL 2026. https://aclanthology.org/2026.findings-eacl.331/</p><button type="button" data-copy-target="cite-pub-08" hidden>Copy reference</button></div></details></article><article class="publication" id="pub-09" data-paper data-topic="verification" data-type="conference" data-year="2026" data-search="Repairing Regex Vulnerabilities via Localization-Guided Instructions Sicheol Sung*, Joonghyuk Hahn*, Yo-Sub Han EACL 2026 2026 Localizing vulnerable subpatterns symbolically, then guiding language models to repair regular expressions. Verification &amp; safety">
+<div class="publication-meta"><span class="venue conference">EACL 2026</span><span class="publication-type">Conference</span></div><h3><a href="https://aclanthology.org/2026.eacl-long.379/" target="_blank" rel="noopener noreferrer">Repairing Regex Vulnerabilities via Localization-Guided Instructions</a></h3><p class="paper-authors">Sicheol Sung<sup>*</sup>, <strong>Joonghyuk Hahn</strong><sup>*</sup>, Yo-Sub Han</p><p class="paper-summary">Localizing vulnerable subpatterns symbolically, then guiding language models to repair regular expressions.</p><div class="paper-links"><a href="https://aclanthology.org/2026.eacl-long.379/" target="_blank" rel="noopener noreferrer">Paper <span class="arrow" aria-hidden="true">↗</span></a><a href="https://aclanthology.org/2026.eacl-long.379.pdf" target="_blank" rel="noopener noreferrer">PDF <span class="arrow" aria-hidden="true">↗</span></a></div><details class="citation"><summary>Cite this paper <span aria-hidden="true">+</span></summary><div class="citation-body"><p id="cite-pub-09" tabindex="-1">Sicheol Sung, Joonghyuk Hahn, Yo-Sub Han (2026). Repairing Regex Vulnerabilities via Localization-Guided Instructions. EACL 2026. https://aclanthology.org/2026.eacl-long.379/</p><button type="button" data-copy-target="cite-pub-09" hidden>Copy reference</button></div></details></article><article class="publication" id="pub-10" data-paper data-topic="verification" data-type="conference" data-year="2026" data-search="A Regex Minimization Benchmark: A PSPACE-Complete Challenge for Language Models Hyundong Jin, Joonghyuk Hahn, Yo-Sub Han EACL 2026 2026  Verification &amp; safety">
+<div class="publication-meta"><span class="venue conference">EACL 2026</span><span class="publication-type">Conference</span></div><h3><a href="https://aclanthology.org/2026.eacl-long.375/" target="_blank" rel="noopener noreferrer">A Regex Minimization Benchmark: A PSPACE-Complete Challenge for Language Models</a></h3><p class="paper-authors">Hyundong Jin, <strong>Joonghyuk Hahn</strong>, Yo-Sub Han</p><div class="paper-links"><a href="https://aclanthology.org/2026.eacl-long.375/" target="_blank" rel="noopener noreferrer">Paper <span class="arrow" aria-hidden="true">↗</span></a><a href="https://aclanthology.org/2026.eacl-long.375.pdf" target="_blank" rel="noopener noreferrer">PDF <span class="arrow" aria-hidden="true">↗</span></a></div><details class="citation"><summary>Cite this paper <span aria-hidden="true">+</span></summary><div class="citation-body"><p id="cite-pub-10" tabindex="-1">Hyundong Jin, Joonghyuk Hahn, Yo-Sub Han (2026). A Regex Minimization Benchmark: A PSPACE-Complete Challenge for Language Models. EACL 2026. https://aclanthology.org/2026.eacl-long.375/</p><button type="button" data-copy-target="cite-pub-10" hidden>Copy reference</button></div></details></article></div></section><section class="publication-year-group" data-year-group aria-labelledby="year-2025"><h2 class="year-heading" id="year-2025">2025</h2><div><article class="publication" id="pub-02" data-paper data-topic="code" data-type="journal" data-year="2025" data-search="Advanced Code Time Complexity Prediction Approach Using Contrastive Learning Shinwoo Park, Joonghyuk Hahn, Elizabeth Orwig, Sang-Ki Ko, Yo-Sub Han Engineering Applications of Artificial Intelligence (EAAI) 2025 2025  Code intelligence">
+<div class="publication-meta"><span class="venue journal">Engineering Applications of Artificial Intelligence (EAAI) 2025</span><span class="publication-type">Journal</span></div><h3><a href="https://doi.org/10.1016/j.engappai.2025.110631" target="_blank" rel="noopener noreferrer">Advanced Code Time Complexity Prediction Approach Using Contrastive Learning</a></h3><p class="paper-authors">Shinwoo Park, <strong>Joonghyuk Hahn</strong>, Elizabeth Orwig, Sang-Ki Ko, Yo-Sub Han</p><div class="paper-links"><a href="https://doi.org/10.1016/j.engappai.2025.110631" target="_blank" rel="noopener noreferrer">Paper <span class="arrow" aria-hidden="true">↗</span></a></div><details class="citation"><summary>Cite this paper <span aria-hidden="true">+</span></summary><div class="citation-body"><p id="cite-pub-02" tabindex="-1">Shinwoo Park, Joonghyuk Hahn, Elizabeth Orwig, Sang-Ki Ko, Yo-Sub Han (2025). Advanced Code Time Complexity Prediction Approach Using Contrastive Learning. Engineering Applications of Artificial Intelligence (EAAI) 2025. https://doi.org/10.1016/j.engappai.2025.110631</p><button type="button" data-copy-target="cite-pub-02" hidden>Copy reference</button></div></details></article><article class="publication" id="pub-03" data-paper data-topic="formal" data-type="journal" data-year="2025" data-search="Characterizations of M-equivalence and Weak M-relation Joonghyuk Hahn*, Hyunjoon Cheon*, Yo-Sub Han International Journal of Foundations of Computer Science (IJFCS) 2025 2025  Formal languages">
+<div class="publication-meta"><span class="venue journal">International Journal of Foundations of Computer Science (IJFCS) 2025</span><span class="publication-type">Journal</span></div><h3><a href="https://doi.org/10.1142/S0129054125410047" target="_blank" rel="noopener noreferrer">Characterizations of M-equivalence and Weak M-relation</a></h3><p class="paper-authors"><strong>Joonghyuk Hahn</strong><sup>*</sup>, Hyunjoon Cheon<sup>*</sup>, Yo-Sub Han</p><div class="paper-links"><a href="https://doi.org/10.1142/S0129054125410047" target="_blank" rel="noopener noreferrer">Paper <span class="arrow" aria-hidden="true">↗</span></a></div><details class="citation"><summary>Cite this paper <span aria-hidden="true">+</span></summary><div class="citation-body"><p id="cite-pub-03" tabindex="-1">Joonghyuk Hahn, Hyunjoon Cheon, Yo-Sub Han (2025). Characterizations of M-equivalence and Weak M-relation. International Journal of Foundations of Computer Science (IJFCS) 2025. https://doi.org/10.1142/S0129054125410047</p><button type="button" data-copy-target="cite-pub-03" hidden>Copy reference</button></div></details></article><article class="publication" id="pub-05" data-paper data-topic="code" data-type="preprint" data-year="2025" data-search="MEC³O: Multi-Expert Consensus for Code Time Complexity Prediction Joonghyuk Hahn*, Soohan Lim*, Yo-Sub Han arXiv 2025  Code intelligence">
+<div class="publication-meta"><span class="venue preprint">arXiv · 2025</span><span class="publication-type">Preprint</span></div><h3><a href="https://arxiv.org/abs/2510.09049" target="_blank" rel="noopener noreferrer">MEC³O: Multi-Expert Consensus for Code Time Complexity Prediction</a></h3><p class="paper-authors"><strong>Joonghyuk Hahn</strong><sup>*</sup>, Soohan Lim<sup>*</sup>, Yo-Sub Han</p><div class="paper-links"><a href="https://arxiv.org/abs/2510.09049" target="_blank" rel="noopener noreferrer">Paper <span class="arrow" aria-hidden="true">↗</span></a><a href="https://arxiv.org/pdf/2510.09049" target="_blank" rel="noopener noreferrer">PDF <span class="arrow" aria-hidden="true">↗</span></a></div><details class="citation"><summary>Cite this paper <span aria-hidden="true">+</span></summary><div class="citation-body"><p id="cite-pub-05" tabindex="-1">Joonghyuk Hahn, Soohan Lim, Yo-Sub Han (2025). MEC³O: Multi-Expert Consensus for Code Time Complexity Prediction. arXiv. https://arxiv.org/abs/2510.09049</p><button type="button" data-copy-target="cite-pub-05" hidden>Copy reference</button></div></details></article><article class="publication" id="pub-07" data-paper data-topic="code" data-type="preprint" data-year="2025" data-search="ECO: Enhanced Code Optimization via Performance-Aware Prompting for Code-LLMs Su-Hyeon Kim, Joonghyuk Hahn, Sooyung Cha, Yo-Sub Han arXiv 2025  Code intelligence">
+<div class="publication-meta"><span class="venue preprint">arXiv · 2025</span><span class="publication-type">Preprint</span></div><h3><a href="https://arxiv.org/abs/2510.10517" target="_blank" rel="noopener noreferrer">ECO: Enhanced Code Optimization via Performance-Aware Prompting for Code-LLMs</a></h3><p class="paper-authors">Su-Hyeon Kim, <strong>Joonghyuk Hahn</strong>, Sooyung Cha, Yo-Sub Han</p><div class="paper-links"><a href="https://arxiv.org/abs/2510.10517" target="_blank" rel="noopener noreferrer">Paper <span class="arrow" aria-hidden="true">↗</span></a><a href="https://arxiv.org/pdf/2510.10517" target="_blank" rel="noopener noreferrer">PDF <span class="arrow" aria-hidden="true">↗</span></a></div><details class="citation"><summary>Cite this paper <span aria-hidden="true">+</span></summary><div class="citation-body"><p id="cite-pub-07" tabindex="-1">Su-Hyeon Kim, Joonghyuk Hahn, Sooyung Cha, Yo-Sub Han (2025). ECO: Enhanced Code Optimization via Performance-Aware Prompting for Code-LLMs. arXiv. https://arxiv.org/abs/2510.10517</p><button type="button" data-copy-target="cite-pub-07" hidden>Copy reference</button></div></details></article><article class="publication" id="pub-11" data-paper data-topic="language" data-type="conference" data-year="2025" data-search="AmpleHate: Amplifying the Attention for Versatile Implicit Hate Detection Yejin Lee, Joonghyuk Hahn, Hyeseon Ahn, Yo-Sub Han EMNLP 2025 2025  Language &amp; learning">
+<div class="publication-meta"><span class="venue conference">EMNLP 2025</span><span class="publication-type">Conference</span></div><h3><a href="https://aclanthology.org/2025.emnlp-main.1469/" target="_blank" rel="noopener noreferrer">AmpleHate: Amplifying the Attention for Versatile Implicit Hate Detection</a></h3><p class="paper-authors">Yejin Lee, <strong>Joonghyuk Hahn</strong>, Hyeseon Ahn, Yo-Sub Han</p><div class="paper-links"><a href="https://aclanthology.org/2025.emnlp-main.1469/" target="_blank" rel="noopener noreferrer">Paper <span class="arrow" aria-hidden="true">↗</span></a><a href="https://aclanthology.org/2025.emnlp-main.1469.pdf" target="_blank" rel="noopener noreferrer">PDF <span class="arrow" aria-hidden="true">↗</span></a></div><details class="citation"><summary>Cite this paper <span aria-hidden="true">+</span></summary><div class="citation-body"><p id="cite-pub-11" tabindex="-1">Yejin Lee, Joonghyuk Hahn, Hyeseon Ahn, Yo-Sub Han (2025). AmpleHate: Amplifying the Attention for Versatile Implicit Hate Detection. EMNLP 2025. https://aclanthology.org/2025.emnlp-main.1469/</p><button type="button" data-copy-target="cite-pub-11" hidden>Copy reference</button></div></details></article><article class="publication" id="pub-12" data-paper data-topic="code" data-type="conference" data-year="2025" data-search="CodeComplex: Dataset for Worst-Case Time Complexity Prediction Seung-Yeop Baik, Joonghyuk Hahn, Jungin Kim, Mingi Jeon, Aditi, Yo-Sub Han, Sang-Ki Ko Findings of EMNLP 2025 2025  Code intelligence">
+<div class="publication-meta"><span class="venue conference">Findings of EMNLP 2025</span><span class="publication-type">Conference</span></div><h3><a href="https://aclanthology.org/2025.findings-emnlp.1069/" target="_blank" rel="noopener noreferrer">CodeComplex: Dataset for Worst-Case Time Complexity Prediction</a></h3><p class="paper-authors">Seung-Yeop Baik, <strong>Joonghyuk Hahn</strong>, Jungin Kim, Mingi Jeon, Aditi, Yo-Sub Han, Sang-Ki Ko</p><div class="paper-links"><a href="https://aclanthology.org/2025.findings-emnlp.1069/" target="_blank" rel="noopener noreferrer">Paper <span class="arrow" aria-hidden="true">↗</span></a><a href="https://aclanthology.org/2025.findings-emnlp.1069.pdf" target="_blank" rel="noopener noreferrer">PDF <span class="arrow" aria-hidden="true">↗</span></a></div><details class="citation"><summary>Cite this paper <span aria-hidden="true">+</span></summary><div class="citation-body"><p id="cite-pub-12" tabindex="-1">Seung-Yeop Baik, Joonghyuk Hahn, Jungin Kim, Mingi Jeon, Aditi, Yo-Sub Han, Sang-Ki Ko (2025). CodeComplex: Dataset for Worst-Case Time Complexity Prediction. Findings of EMNLP 2025. https://aclanthology.org/2025.findings-emnlp.1069/</p><button type="button" data-copy-target="cite-pub-12" hidden>Copy reference</button></div></details></article><article class="publication" id="pub-13" data-paper data-topic="code" data-type="conference" data-year="2025" data-search="TCProF: Time-Complexity Prediction SSL Framework Joonghyuk Hahn, Hyeseon Ahn, Jungin Kim, Soohan Lim, Yo-Sub Han NAACL 2025 2025 Combining symbolic analysis and semi-supervised learning for code time-complexity prediction. Code intelligence">
+<div class="publication-meta"><span class="venue conference">NAACL 2025</span><span class="publication-type">Conference</span></div><h3><a href="https://aclanthology.org/2025.naacl-long.482/" target="_blank" rel="noopener noreferrer">TCProF: Time-Complexity Prediction SSL Framework</a></h3><p class="paper-authors"><strong>Joonghyuk Hahn</strong>, Hyeseon Ahn, Jungin Kim, Soohan Lim, Yo-Sub Han</p><p class="paper-summary">Combining symbolic analysis and semi-supervised learning for code time-complexity prediction.</p><div class="paper-links"><a href="https://aclanthology.org/2025.naacl-long.482/" target="_blank" rel="noopener noreferrer">Paper <span class="arrow" aria-hidden="true">↗</span></a><a href="https://aclanthology.org/2025.naacl-long.482.pdf" target="_blank" rel="noopener noreferrer">PDF <span class="arrow" aria-hidden="true">↗</span></a></div><details class="citation"><summary>Cite this paper <span aria-hidden="true">+</span></summary><div class="citation-body"><p id="cite-pub-13" tabindex="-1">Joonghyuk Hahn, Hyeseon Ahn, Jungin Kim, Soohan Lim, Yo-Sub Han (2025). TCProF: Time-Complexity Prediction SSL Framework. NAACL 2025. https://aclanthology.org/2025.naacl-long.482/</p><button type="button" data-copy-target="cite-pub-13" hidden>Copy reference</button></div></details></article></div></section><section class="publication-year-group" data-year-group aria-labelledby="year-2024"><h2 class="year-heading" id="year-2024">2024</h2><div><article class="publication" id="pub-04" data-paper data-topic="formal" data-type="journal" data-year="2024" data-search="On the Decidability of Infix Inclusion Problem Hyunjoon Cheon*, Joonghyuk Hahn*, Yo-Sub Han Theory of Computing Systems (ToCS) 2024 2024  Formal languages">
+<div class="publication-meta"><span class="venue journal">Theory of Computing Systems (ToCS) 2024</span><span class="publication-type">Journal</span></div><h3><a href="https://doi.org/10.1007/s00224-023-10160-w" target="_blank" rel="noopener noreferrer">On the Decidability of Infix Inclusion Problem</a></h3><p class="paper-authors">Hyunjoon Cheon<sup>*</sup>, <strong>Joonghyuk Hahn</strong><sup>*</sup>, Yo-Sub Han</p><div class="paper-links"><a href="https://doi.org/10.1007/s00224-023-10160-w" target="_blank" rel="noopener noreferrer">Paper <span class="arrow" aria-hidden="true">↗</span></a></div><details class="citation"><summary>Cite this paper <span aria-hidden="true">+</span></summary><div class="citation-body"><p id="cite-pub-04" tabindex="-1">Hyunjoon Cheon, Joonghyuk Hahn, Yo-Sub Han (2024). On the Decidability of Infix Inclusion Problem. Theory of Computing Systems (ToCS) 2024. https://doi.org/10.1007/s00224-023-10160-w</p><button type="button" data-copy-target="cite-pub-04" hidden>Copy reference</button></div></details></article><article class="publication" id="pub-14" data-paper data-topic="formal" data-type="conference" data-year="2024" data-search="Universal Rewriting Rules for the Parikh Matrix Injectivity Problem Ingyu Baek*, Joonghyuk Hahn*, Yo-Sub Han, Kai Salomaa DLT 2024, LNCS 14791 2024  Formal languages">
+<div class="publication-meta"><span class="venue conference">DLT 2024, LNCS 14791</span><span class="publication-type">Conference</span></div><h3><a href="https://doi.org/10.1007/978-3-031-66159-4_6" target="_blank" rel="noopener noreferrer">Universal Rewriting Rules for the Parikh Matrix Injectivity Problem</a></h3><p class="paper-authors">Ingyu Baek<sup>*</sup>, <strong>Joonghyuk Hahn</strong><sup>*</sup>, Yo-Sub Han, Kai Salomaa</p><div class="paper-links"><a href="https://doi.org/10.1007/978-3-031-66159-4_6" target="_blank" rel="noopener noreferrer">Paper <span class="arrow" aria-hidden="true">↗</span></a></div><details class="citation"><summary>Cite this paper <span aria-hidden="true">+</span></summary><div class="citation-body"><p id="cite-pub-14" tabindex="-1">Ingyu Baek, Joonghyuk Hahn, Yo-Sub Han, Kai Salomaa (2024). Universal Rewriting Rules for the Parikh Matrix Injectivity Problem. DLT 2024, LNCS 14791. https://doi.org/10.1007/978-3-031-66159-4_6</p><button type="button" data-copy-target="cite-pub-14" hidden>Copy reference</button></div></details></article><article class="publication" id="pub-15" data-paper data-topic="language" data-type="conference" data-year="2024" data-search="SuperST: Superficial Self-Training for Few-Shot Text Classification Ju-Hyoung Lee*, Joonghyuk Hahn*, Hyeon-Tae Seo, Jiho Park, Yo-Sub Han LREC-COLING 2024 2024  Language &amp; learning">
+<div class="publication-meta"><span class="venue conference">LREC-COLING 2024</span><span class="publication-type">Conference</span></div><h3><a href="https://aclanthology.org/2024.lrec-main.1341/" target="_blank" rel="noopener noreferrer">SuperST: Superficial Self-Training for Few-Shot Text Classification</a></h3><p class="paper-authors">Ju-Hyoung Lee<sup>*</sup>, <strong>Joonghyuk Hahn</strong><sup>*</sup>, Hyeon-Tae Seo, Jiho Park, Yo-Sub Han</p><div class="paper-links"><a href="https://aclanthology.org/2024.lrec-main.1341/" target="_blank" rel="noopener noreferrer">Paper <span class="arrow" aria-hidden="true">↗</span></a><a href="https://aclanthology.org/2024.lrec-main.1341.pdf" target="_blank" rel="noopener noreferrer">PDF <span class="arrow" aria-hidden="true">↗</span></a></div><details class="citation"><summary>Cite this paper <span aria-hidden="true">+</span></summary><div class="citation-body"><p id="cite-pub-15" tabindex="-1">Ju-Hyoung Lee, Joonghyuk Hahn, Hyeon-Tae Seo, Jiho Park, Yo-Sub Han (2024). SuperST: Superficial Self-Training for Few-Shot Text Classification. LREC-COLING 2024. https://aclanthology.org/2024.lrec-main.1341/</p><button type="button" data-copy-target="cite-pub-15" hidden>Copy reference</button></div></details></article></div></section><section class="publication-year-group" data-year-group aria-labelledby="year-2023"><h2 class="year-heading" id="year-2023">2023</h2><div><article class="publication" id="pub-16" data-paper data-topic="language" data-type="conference" data-year="2023" data-search="ATHENA: Mathematical Reasoning with Thought Expansion J.B. Kim, Hazel Kim, Joonghyuk Hahn, Yo-Sub Han EMNLP 2023 2023  Language &amp; learning">
+<div class="publication-meta"><span class="venue conference">EMNLP 2023</span><span class="publication-type">Conference</span></div><h3><a href="https://aclanthology.org/2023.emnlp-main.1014/" target="_blank" rel="noopener noreferrer">ATHENA: Mathematical Reasoning with Thought Expansion</a></h3><p class="paper-authors">J.B. Kim, Hazel Kim, <strong>Joonghyuk Hahn</strong>, Yo-Sub Han</p><div class="paper-links"><a href="https://aclanthology.org/2023.emnlp-main.1014/" target="_blank" rel="noopener noreferrer">Paper <span class="arrow" aria-hidden="true">↗</span></a><a href="https://aclanthology.org/2023.emnlp-main.1014.pdf" target="_blank" rel="noopener noreferrer">PDF <span class="arrow" aria-hidden="true">↗</span></a></div><details class="citation"><summary>Cite this paper <span aria-hidden="true">+</span></summary><div class="citation-body"><p id="cite-pub-16" tabindex="-1">J.B. Kim, Hazel Kim, Joonghyuk Hahn, Yo-Sub Han (2023). ATHENA: Mathematical Reasoning with Thought Expansion. EMNLP 2023. https://aclanthology.org/2023.emnlp-main.1014/</p><button type="button" data-copy-target="cite-pub-16" hidden>Copy reference</button></div></details></article><article class="publication" id="pub-17" data-paper data-topic="language" data-type="conference" data-year="2023" data-search="GDA: Grammar-based Data Augmentation for Text Classification using Slot Information Joonghyuk Hahn*, Hyunjoon Cheon*, Elizabeth Grace Orwig, Su-Hyeon Kim, Sang-Ki Ko, Yo-Sub Han Findings of EMNLP 2023 2023  Language &amp; learning">
+<div class="publication-meta"><span class="venue conference">Findings of EMNLP 2023</span><span class="publication-type">Conference</span></div><h3><a href="https://aclanthology.org/2023.findings-emnlp.486/" target="_blank" rel="noopener noreferrer">GDA: Grammar-based Data Augmentation for Text Classification using Slot Information</a></h3><p class="paper-authors"><strong>Joonghyuk Hahn</strong><sup>*</sup>, Hyunjoon Cheon<sup>*</sup>, Elizabeth Grace Orwig, Su-Hyeon Kim, Sang-Ki Ko, Yo-Sub Han</p><div class="paper-links"><a href="https://aclanthology.org/2023.findings-emnlp.486/" target="_blank" rel="noopener noreferrer">Paper <span class="arrow" aria-hidden="true">↗</span></a><a href="https://aclanthology.org/2023.findings-emnlp.486.pdf" target="_blank" rel="noopener noreferrer">PDF <span class="arrow" aria-hidden="true">↗</span></a></div><details class="citation"><summary>Cite this paper <span aria-hidden="true">+</span></summary><div class="citation-body"><p id="cite-pub-17" tabindex="-1">Joonghyuk Hahn, Hyunjoon Cheon, Elizabeth Grace Orwig, Su-Hyeon Kim, Sang-Ki Ko, Yo-Sub Han (2023). GDA: Grammar-based Data Augmentation for Text Classification using Slot Information. Findings of EMNLP 2023. https://aclanthology.org/2023.findings-emnlp.486/</p><button type="button" data-copy-target="cite-pub-17" hidden>Copy reference</button></div></details></article><article class="publication" id="pub-18" data-paper data-topic="formal" data-type="conference" data-year="2023" data-search="M-equivalence of Parikh Matrix over a Ternary Alphabet Joonghyuk Hahn*, Hyunjoon Cheon*, Yo-Sub Han CIAA 2023, LNCS 14151 2023  Formal languages">
+<div class="publication-meta"><span class="venue conference">CIAA 2023, LNCS 14151</span><span class="publication-type">Conference</span></div><h3><a href="https://doi.org/10.1007/978-3-031-40247-0_10" target="_blank" rel="noopener noreferrer">M-equivalence of Parikh Matrix over a Ternary Alphabet</a></h3><p class="paper-authors"><strong>Joonghyuk Hahn</strong><sup>*</sup>, Hyunjoon Cheon<sup>*</sup>, Yo-Sub Han</p><div class="paper-links"><a href="https://doi.org/10.1007/978-3-031-40247-0_10" target="_blank" rel="noopener noreferrer">Paper <span class="arrow" aria-hidden="true">↗</span></a></div><details class="citation"><summary>Cite this paper <span aria-hidden="true">+</span></summary><div class="citation-body"><p id="cite-pub-18" tabindex="-1">Joonghyuk Hahn, Hyunjoon Cheon, Yo-Sub Han (2023). M-equivalence of Parikh Matrix over a Ternary Alphabet. CIAA 2023, LNCS 14151. https://doi.org/10.1007/978-3-031-40247-0_10</p><button type="button" data-copy-target="cite-pub-18" hidden>Copy reference</button></div></details></article></div></section><section class="publication-year-group" data-year-group aria-labelledby="year-2022"><h2 class="year-heading" id="year-2022">2022</h2><div><article class="publication" id="pub-19" data-paper data-topic="code" data-type="conference" data-year="2022" data-search="Boosting Code Summarization by Embedding Code Structures Jikyeong Son*, Joonghyuk Hahn*, Hyeon-Tae Seo, Yo-Sub Han COLING 2022 2022  Code intelligence">
+<div class="publication-meta"><span class="venue conference">COLING 2022</span><span class="publication-type">Conference</span></div><h3><a href="https://aclanthology.org/2022.coling-1.521/" target="_blank" rel="noopener noreferrer">Boosting Code Summarization by Embedding Code Structures</a></h3><p class="paper-authors">Jikyeong Son<sup>*</sup>, <strong>Joonghyuk Hahn</strong><sup>*</sup>, Hyeon-Tae Seo, Yo-Sub Han</p><div class="paper-links"><a href="https://aclanthology.org/2022.coling-1.521/" target="_blank" rel="noopener noreferrer">Paper <span class="arrow" aria-hidden="true">↗</span></a><a href="https://aclanthology.org/2022.coling-1.521.pdf" target="_blank" rel="noopener noreferrer">PDF <span class="arrow" aria-hidden="true">↗</span></a></div><details class="citation"><summary>Cite this paper <span aria-hidden="true">+</span></summary><div class="citation-body"><p id="cite-pub-19" tabindex="-1">Jikyeong Son, Joonghyuk Hahn, Hyeon-Tae Seo, Yo-Sub Han (2022). Boosting Code Summarization by Embedding Code Structures. COLING 2022. https://aclanthology.org/2022.coling-1.521/</p><button type="button" data-copy-target="cite-pub-19" hidden>Copy reference</button></div></details></article><article class="publication" id="pub-20" data-paper data-topic="formal" data-type="conference" data-year="2022" data-search="On the Decidability of Infix Inclusion Problem Hyunjoon Cheon*, Joonghyuk Hahn*, Yo-Sub Han DLT 2022, LNCS 13257 2022  Formal languages">
+<div class="publication-meta"><span class="venue conference">DLT 2022, LNCS 13257</span><span class="publication-type">Conference</span></div><h3><a href="https://doi.org/10.1007/978-3-031-05578-2_9" target="_blank" rel="noopener noreferrer">On the Decidability of Infix Inclusion Problem</a></h3><p class="paper-authors">Hyunjoon Cheon<sup>*</sup>, <strong>Joonghyuk Hahn</strong><sup>*</sup>, Yo-Sub Han</p><div class="paper-links"><a href="https://doi.org/10.1007/978-3-031-05578-2_9" target="_blank" rel="noopener noreferrer">Paper <span class="arrow" aria-hidden="true">↗</span></a></div><details class="citation"><summary>Cite this paper <span aria-hidden="true">+</span></summary><div class="citation-body"><p id="cite-pub-20" tabindex="-1">Hyunjoon Cheon, Joonghyuk Hahn, Yo-Sub Han (2022). On the Decidability of Infix Inclusion Problem. DLT 2022, LNCS 13257. https://doi.org/10.1007/978-3-031-05578-2_9</p><button type="button" data-copy-target="cite-pub-20" hidden>Copy reference</button></div></details></article></div></section><section class="publication-year-group" data-year-group aria-labelledby="year-2021"><h2 class="year-heading" id="year-2021">2021</h2><div><article class="publication" id="pub-21" data-paper data-topic="language" data-type="conference" data-year="2021" data-search="Self-Training using Rules of Grammar for Few-Shot NLU Joonghyuk Hahn*, Hyunjoon Cheon*, Kyuyeol Han, Cheongjae Lee, Junseok Kim, Yo-Sub Han Findings of EMNLP 2021 2021  Language &amp; learning">
+<div class="publication-meta"><span class="venue conference">Findings of EMNLP 2021</span><span class="publication-type">Conference</span></div><h3><a href="https://aclanthology.org/2021.findings-emnlp.389/" target="_blank" rel="noopener noreferrer">Self-Training using Rules of Grammar for Few-Shot NLU</a></h3><p class="paper-authors"><strong>Joonghyuk Hahn</strong><sup>*</sup>, Hyunjoon Cheon<sup>*</sup>, Kyuyeol Han, Cheongjae Lee, Junseok Kim, Yo-Sub Han</p><div class="paper-links"><a href="https://aclanthology.org/2021.findings-emnlp.389/" target="_blank" rel="noopener noreferrer">Paper <span class="arrow" aria-hidden="true">↗</span></a><a href="https://aclanthology.org/2021.findings-emnlp.389.pdf" target="_blank" rel="noopener noreferrer">PDF <span class="arrow" aria-hidden="true">↗</span></a></div><details class="citation"><summary>Cite this paper <span aria-hidden="true">+</span></summary><div class="citation-body"><p id="cite-pub-21" tabindex="-1">Joonghyuk Hahn, Hyunjoon Cheon, Kyuyeol Han, Cheongjae Lee, Junseok Kim, Yo-Sub Han (2021). Self-Training using Rules of Grammar for Few-Shot NLU. Findings of EMNLP 2021. https://aclanthology.org/2021.findings-emnlp.389/</p><button type="button" data-copy-target="cite-pub-21" hidden>Copy reference</button></div></details></article><article class="publication" id="pub-22" data-paper data-topic="formal" data-type="conference" data-year="2021" data-search="Most Pseudo-copy Languages Are Not Context-free Hyunjoon Cheon*, Joonghyuk Hahn*, Yo-Sub Han, Sang-Ki Ko COCOON 2021 2021  Formal languages">
+<div class="publication-meta"><span class="venue conference">COCOON 2021</span><span class="publication-type">Conference</span></div><h3><a href="https://doi.org/10.1007/978-3-030-89543-3_16" target="_blank" rel="noopener noreferrer">Most Pseudo-copy Languages Are Not Context-free</a></h3><p class="paper-authors">Hyunjoon Cheon<sup>*</sup>, <strong>Joonghyuk Hahn</strong><sup>*</sup>, Yo-Sub Han, Sang-Ki Ko</p><div class="paper-links"><a href="https://doi.org/10.1007/978-3-030-89543-3_16" target="_blank" rel="noopener noreferrer">Paper <span class="arrow" aria-hidden="true">↗</span></a></div><details class="citation"><summary>Cite this paper <span aria-hidden="true">+</span></summary><div class="citation-body"><p id="cite-pub-22" tabindex="-1">Hyunjoon Cheon, Joonghyuk Hahn, Yo-Sub Han, Sang-Ki Ko (2021). Most Pseudo-copy Languages Are Not Context-free. COCOON 2021. https://doi.org/10.1007/978-3-030-89543-3_16</p><button type="button" data-copy-target="cite-pub-22" hidden>Copy reference</button></div></details></article></div></section></div></main>
+<footer class="site-footer"><div class="wrap footer-inner">
+<span>© 2026 Joonghyuk Hahn <span lang="ko">한중혁</span></span>
+<div class="footer-links"><a href="https://liu.se/en" target="_blank" rel="noopener noreferrer">Linköping University</a><a href="mailto:joong.hyuk.hahn@liu.se">Email</a><span>Updated 2026-09-16</span></div>
+</div></footer><div class="action-status" id="action-status" role="status" aria-live="polite" aria-atomic="true"></div>
+</body></html>
